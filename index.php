@@ -14,9 +14,9 @@ require_once("./meta/htmlheaders.php");
 	<?= htmlheaders("Login"); ?>
 </head>
 
-<body class="body min-vh-100">
-	<main class="container-sm d-flex flex-column justify-content-center align-items-center">
-		<h1 class="p-5 text-white text-center display-4">The Haroonian Panel</h1>
+<body class="body">
+	<main class="min-vh-100 container-sm d-flex flex-column justify-content-center align-items-center">
+		<h1 class="text-white text-center display-4">The Haroonian Panel</h1>
 		<div class="login">
 			<h2 class="text-white text-center fs-4 fw-light p-0 mb-4">Login</h2>
 			<form class="login__form" method="POST" action="login.php">

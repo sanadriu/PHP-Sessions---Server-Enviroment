@@ -59,10 +59,11 @@ a {
 .login {
   width: 320px;
   padding: 1.25rem;
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
+  background: rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(4px);
   border-radius: 0.25rem;
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  color: white;
 }
 @media screen and (min-width: 480px) {
   .login {
@@ -92,6 +93,16 @@ a {
 .accordion-button:not(.collapsed) {
   background: rgba(0, 0, 0, 0.25);
   color: white;
+}
+.accordion-button:not(.collapsed)::after {
+  background: none;
+  font-family: "Material Icons";
+  content: "\e5cf";
+}
+.accordion-button::after {
+  background: none;
+  font-family: "Material Icons";
+  content: "\e5cf";
 }
 
 .list-group-item {
@@ -1758,9 +1769,9 @@ template {
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(4px);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem;
-  backdrop-filter: blur(4px);
 }
 
 /*# sourceMappingURL=main.css.map */
