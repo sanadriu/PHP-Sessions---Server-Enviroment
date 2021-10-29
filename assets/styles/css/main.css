@@ -82,6 +82,27 @@ a {
   font-weight: 300;
 }
 
+.accordion-item {
+  background: rgba(0, 0, 0, 0.125);
+}
+.accordion-button {
+  background: none;
+  color: white;
+}
+.accordion-button:not(.collapsed) {
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.list-group-item {
+  background: none;
+  color: white;
+}
+.list-group-item.disabled {
+  background: none;
+  color: silver;
+}
+
 /* ===== Breakpoints ===== */
 /* ===== Colors ===== */
 /* ===== Color Classes ===== */
@@ -1716,6 +1737,30 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.navbar {
+  min-height: 5rem;
+}
+
+.aside-nav {
+  min-height: 0;
+  background: rgba(255, 255, 255, 0.125);
+  backdrop-filter: blur(4px);
+}
+@media screen and (min-width: 768px) {
+  .aside-nav {
+    min-height: calc(100vh - 5rem);
+  }
+}
+
+.panel {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.125);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  backdrop-filter: blur(4px);
 }
 
 /*# sourceMappingURL=main.css.map */
