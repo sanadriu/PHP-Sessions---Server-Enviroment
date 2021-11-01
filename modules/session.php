@@ -41,7 +41,7 @@ function setSessionValue(string $key, string $value)
 	$_SESSION[$key] = $value;
 }
 
-function getSessionValue(string $key)
+function popSessionValue(string $key)
 {
 	if (session_status() === PHP_SESSION_NONE) session_start();
 

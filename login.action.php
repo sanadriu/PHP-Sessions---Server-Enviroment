@@ -1,12 +1,12 @@
 <?php
 require_once("./modules/validate.php");
-require_once("./modules/session_control.php");
+require_once("./modules/session.php");
 
 if (checkLogin()) {
 	initSession();
-	header("Location: ./panel.php");
+	header("Location: ./panel");
 } else {
 	setSessionValue("errorMsg", "Access denied. Credentials are invalid.");
 
-	header("Location: ./index.php");
+	header("Location: ./login");
 }
