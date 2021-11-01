@@ -10,7 +10,11 @@ require_once("./meta/htmlheaders.php");
 
 <head>
 	<?= htmlheaders("Panel"); ?>
-	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="./assets/js/charts/chart-1.js" type="module"></script>
+	<script src="./assets/js/charts/chart-2.js" type="module"></script>
+	<script src="./assets/js/charts/chart-3.js" type="module"></script>
+	<script src="./assets/js/charts/chart-4.js" type="module"></script>
 </head>
 
 <body class="body min-vh-100">
@@ -102,8 +106,45 @@ require_once("./meta/htmlheaders.php");
 			</aside>
 		</div>
 		<div class="col-12 col-md-8 col-lg-9 col-xl-10 p-3 d-flex justify-content-center align-items-center">
-			<main class="panel">
-
+			<main class="panel p-3">
+				<div class="row">
+					<div class="col-12 col-lg-6 col-xxl-4 mb-3">
+						<div class="card border-dark rounded-3">
+							<div class="card-header bg-dark text-light">
+								Number of daily sales (Last 30 days)
+							</div>
+							<canvas class="card-body" id="chart01">
+							</canvas>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xxl-4 mb-3">
+						<div class="card border-dark rounded-3">
+							<div class="card-header bg-dark text-light">
+								Best selling products (Last 30 days)
+							</div>
+							<canvas class="card-body" id="chart02">
+							</canvas>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xxl-4 mb-3">
+						<div class="card border-dark rounded-3">
+							<div class="card-header bg-dark text-light">
+								Revenue (Last 2 months)
+							</div>
+							<canvas class="card-body" id="chart03">
+							</canvas>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 col-xxl-4 mb-3">
+						<div class="card border-dark rounded-3">
+							<div class="card-header bg-dark text-light">
+								Most viewed categories (Last 6 months)
+							</div>
+							<canvas class="card-body" id="chart04">
+							</canvas>
+						</div>
+					</div>
+				</div>
 			</main>
 		</div>
 	</div>
